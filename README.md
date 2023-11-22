@@ -5,7 +5,7 @@ For running scripts look at *Classification-pipeline.ipynb*
 
 ## Classification algorithm
 
-Classification of MTases performed by scripts *`classification_SUPFAM.py* and *Classification_Pfam.py*. `
+Classification of MTases performed by scripts `classification_SUPFAM.py` and `Classification_Pfam.py`. 
 
 For cat-profile from SUPFAM the algorithm assigns a class according to the following principle:
 
