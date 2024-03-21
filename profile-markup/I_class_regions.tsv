@@ -1,5 +1,0 @@
-#:Pfam_ID	AlphaFold ID	Region_type	Region_name	Region_coords_HMM
-I-class	AF-B4EFP2-F1	subdomain	sam_subdom	1-61
-I-class	AF-B4EFP2-F1	subdomain	cat_subdom	62-161
-I-class	AF-B4EFP2-F1	motif	cat_motif	68-71
-I-class	AF-B4EFP2-F1	motif	sam_motif	6-13
