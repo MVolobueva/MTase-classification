@@ -86,11 +86,11 @@ Dam	AF-A0A2L1UPL1-F1	motif	cat_motif	66-69
 EcoRI_methylase	AF-P00472-F1	catdomain	catdomain-1	19-39
 EcoRI_methylase	AF-P00472-F1	catdomain	catdomain-2	48-125
 EcoRI_methylase	AF-P00472-F1	catdomain	catdomain-3	125-144
-EcoRI_methylase	AF-P00472-F1	catdomain	cat_subdom-4	149-236
+EcoRI_methylase	AF-P00472-F1	catdomain	catdomain-4	149-236
 EcoRI_methylase	AF-P00472-F1	motif	sam_motif	40-47
 EcoRI_methylase	AF-P00472-F1	motif	cat_motif	145-148
 New-MTase-profile	AF-B4EFP2-F1	catdomain	catdomain-1	1-5
-New-MTase-profile	AF-B4EFP2-F1	catdomain	cat_subdom-4	72-161
+New-MTase-profile	AF-B4EFP2-F1	catdomain	catdomain-4	72-181
 New-MTase-profile	AF-B4EFP2-F1	motif	cat_motif	68-71
 New-MTase-profile	AF-B4EFP2-F1	motif	sam_motif	6-13
 New-MTase-profile	AF-B4EFP2-F1	catdomain	catdomain-2	14-41
