@@ -137,9 +137,9 @@ def best_profile(df):
 
 #function for class assignment - step 5 in pipline step 3
 def assign_class(model_id, regions, region_coords):
-    if model_id in [51816, 52618] and regions.count(',') > 2:
+    if model_id in [54378, 51816, 52618, 53087] and regions.count(',') > 2:
         return 'A'
-    if model_id in [37952, 45988, 48856, 52484] and regions.count(',') > 2:
+    if model_id in [36976, 37952, 45988, 48856, 52484] and regions.count(',') > 2:
         if regions.find('cat_motif') < regions.find('sam_motif'):
             return 'B'
         if regions.find('cat_motif') > regions.find('sam_motif'):
@@ -151,7 +151,7 @@ def assign_class(model_id, regions, region_coords):
                     return 'D'
             else:
                 return 'D'
-    if model_id in [46303, 46923] and regions.count(',') > 2:
+    if model_id in [46303, 46923, 45633] and regions.count(',') > 2:
         if regions[:3] == 'Hd3':
             return 'K'
         else:
