@@ -137,25 +137,25 @@ def best_profile(df):
 
 #function for class assignment - step 5 in pipline step 3
 def assign_class(model_id, regions, region_coords):
-    if model_id in [54378, 51816, 52618, 53087] and regions.count(',') > 2:
+    if model_id in [51816, 52618] and regions.count(',') > 2:
         return 'A'
-    if model_id in [36976, 37952, 45988, 48856, 52484] and regions.count(',') > 2:
+    if model_id in [37952, 45988, 48856, 52484] and regions.count(',') > 2:
         if regions.find('cat_motif') < regions.find('sam_motif'):
             return 'B'
         if regions.find('cat_motif') > regions.find('sam_motif'):
             if 'Hd2-Hd1' in regions and 'S7-S4' in regions:
                 if int(region_coords.split(',')[regions.split(',').index('S7-S4')].split('-')[0]) - \
                 int(region_coords.split(',')[regions.split(',').index('Hd2-Hd1')].split('-')[-1]) < 50:
-                    return 'L'
+                    return 'H'
                 else:
                     return 'D'
             else:
                 return 'D'
-    if model_id in [46303, 46923, 45633] and regions.count(',') > 2:
+    if model_id in [46303, 46923] and regions.count(',') > 2:
         if regions[:3] == 'Hd3':
             return 'K'
         else:
-            return 'C'
+            return 'J'
     if model_id in ["New-MTase-profile"] and regions.count(',') > 2:
         return "I"
     if model_id in ["Dam"] and regions.count(',') > 2:
