@@ -153,9 +153,9 @@ def assign_class(model_id, regions, region_coords):
                 return 'D'
     if model_id in [46303, 46923, 45633] and regions.count(',') > 2:
         if regions[:3] == 'Hd3':
-            return 'K'
-        else:
             return 'J'
+        else:
+            return 'C'
     if model_id in ["New-MTase-profile"] and regions.count(',') > 2:
         return "I"
     if model_id in ["Dam"] and regions.count(',') > 2:
