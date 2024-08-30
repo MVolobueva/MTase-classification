@@ -161,7 +161,7 @@ def assign_class(model_id, regions, region_coords):
     if model_id in ["Dam"] and regions.count(',') > 2:
         return "H"
     if model_id in ["EcoRI_methylase"] and regions.count(',') > 2:
-        return "F"
+        return "I"
     if model_id in ["MT-A70"] and regions.count(',') > 2:
         return "G"
     return '-'
