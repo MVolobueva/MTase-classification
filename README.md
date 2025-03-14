@@ -1,5 +1,3 @@
-Sure! Here’s the updated README file with the requested modification:
-
 # MTase Classification Pipeline
 
 This repository provides a pipeline for the classification of Methyltransferases (MTases) using Hidden Markov Models (HMMs). The pipeline consists of three main steps: installing the required packages, conducting HMMer searches, and detecting regions for classification.
@@ -26,10 +24,7 @@ Before running the pipeline, you will need to install the required packages. Exe
 
 The visualization of the steps in the pipeline is shown in the image below:
 
-```python
-from IPython.display import Image
-Image('/content/MTase-classification/Pipeline.jpg')
-```
+![Pipeline Steps](https://github.com/MVolobueva/MTase-classification/blob/main/Pipeline.jpg)
 
 ## HMMer Search
 
@@ -83,7 +78,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 We would like to acknowledge the developers and contributors of the libraries and tools used in this project. Special thanks to the HMMer team for their contribution to bioinformatics.
-
----
-
-Feel free to modify any sections as per your needs!
