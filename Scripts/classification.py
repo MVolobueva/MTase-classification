@@ -187,7 +187,7 @@ def main():
     df = best_profile(df)
     # step 5 in pipline step 3
     df['New_class'] = df.apply(lambda x: assign_class(x[1], x[2], x[3]), axis=1)
-    df.to_csv('./pipelineFiles/class.tsv', sep='\t')
+    df.to_csv(args.class_output, sep='\t')
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
