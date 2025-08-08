@@ -181,17 +181,18 @@ def main():
     # step 2 in pipline step 3
     t = sequence_filtration(df)
     t[1].to_csv(args.more_than_one_cat_domain, sep='\t')
-    # step 3 in pipline step 3
-    df = set_of_regions(t[0])
-    # step 4 in pipline step 3
-    df = best_profile(df)
-    # step 5 in pipline step 3
-    df['New_class'] = df.apply(lambda x: assign_class(x[1], x[2], x[3]), axis=1)
-    df.to_csv(args.class_output, sep='\t')
+    if not t[0].empty:
+      df = set_of_regions(t[0])
+      # step 4 in pipline step 3
+      df = best_profile(df)
+      # step 5 in pipline step 3
+      df['New_class'] = df.apply(lambda x: assign_class(x[1], x[2], x[3]), axis=1)
+      df.to_csv(args.class_output, sep='\t')
+    else:
+      print("There is no single catalytic domain MTases")
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main()
     print('Finish')
-
-
